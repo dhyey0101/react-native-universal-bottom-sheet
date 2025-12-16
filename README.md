@@ -20,9 +20,8 @@ Built on top of `react-native-raw-bottom-sheet`, this component provides a **pol
 
 ## 📸 Preview
 
-> iOS glass-style blur + Android native background
-
-_(Add GIF or screenshots here for better visibility)_
+<img width="237" height="1266" alt="IMG_0547" src="https://github.com/user-attachments/assets/e9c0282f-9f57-4a8f-af8e-4ff80c32985f" />
+<img width="237" height="1266" alt="IMG_0546" src="https://github.com/user-attachments/assets/39a6131c-7615-4a0c-885d-e192c391f937" />
 
 ---
 
@@ -96,10 +95,10 @@ Supported values:
 
 ## 🧠 Props
 
-| Prop       | Type        | Default | Description   |                  |
-| ---------- | ----------- | ------- | ------------- | ---------------- |
-| `children` | `ReactNode` | —       | Sheet content |                  |
-| `mode`     | `"light"    | "dark"` | System        | Force theme mode |
+| Prop       | Type              | Default | Description                               |                                                |
+| ---------- | ----------------- | ------- | ----------------------------------------- | ---------------------------------------------- |
+| `children` | `React.ReactNode` | —       | Content to render inside the bottom sheet |                                                |
+| `mode`     | `"light" \        | "dark"` | `System`                                  | Force light or dark theme for the bottom sheet |
 
 ---
 
@@ -126,13 +125,6 @@ Supported values:
 | -------- | ---------------------------- |
 | iOS      | Blur + Gradient + Border     |
 | Android  | Solid background (optimized) |
-
----
-
-## 📌 Requirements
-
-- React Native `>= 0.64`
-- React `>= 17`
 
 ---
 
