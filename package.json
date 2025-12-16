@@ -2,8 +2,8 @@
   "name": "react-native-universal-bottom-sheet",
   "version": "1.0.0",
   "description": "A modern universal bottom sheet for React Native with glassmorphism design, blur effects, gradient borders, and adaptive theme support.",
-  "main": "src/index.tsx",
-  "react-native": "src/index.tsx",
+  "main": "src/index",
+  "react-native": "src/index",
   "keywords": [
     "react-native",
     "bottom-sheet",
@@ -32,10 +32,13 @@
   },
   "homepage": "https://github.com/dhyey0101/react-native-universal-bottom-sheet#readme",
   "peerDependencies": {
+    "@react-native-community/blur": ">=4.0.0",
     "react": ">=17.0.0",
     "react-native": ">=0.64.0",
-    "react-native-raw-bottom-sheet": "^3.0.0",
-    "@react-native-community/blur": ">=4.0.0",
-    "react-native-linear-gradient": ">=2.5.0"
+    "react-native-linear-gradient": ">=2.5.0",
+    "react-native-raw-bottom-sheet": "^3.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.3"
   }
 }
