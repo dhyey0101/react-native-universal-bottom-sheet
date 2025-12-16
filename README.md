@@ -2,7 +2,7 @@
 
 ✨ **A modern, universal bottom sheet for React Native** with glassmorphism effects, blur, gradients, and automatic light/dark theme support.
 
-Built on top of `react-native-raw-bottom-sheet`, this component provides a **polished iOS glass-style experience** while remaining **fully compatible with Android**.
+An elegant, platform-aware bottom sheet delivering glassmorphism on iOS and reliable performance on Android.
 
 ---
 
