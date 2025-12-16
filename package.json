@@ -1,6 +1,6 @@
 {
   "name": "react-native-universal-bottom-sheet",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A modern universal bottom sheet for React Native with glassmorphism design, blur effects, gradient borders, and adaptive theme support.",
   "main": "src/index",
   "react-native": "src/index",
