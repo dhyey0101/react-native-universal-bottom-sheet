@@ -1,9 +1,14 @@
 import { BlurView } from "@react-native-community/blur";
 import React, { forwardRef } from "react";
-import { Dimensions, Platform, StyleSheet, View } from "react-native";
+import {
+  Dimensions,
+  Platform,
+  StyleSheet,
+  View,
+  useColorScheme,
+} from "react-native";
 import LinearGradient from "react-native-linear-gradient";
 import RBSheet from "react-native-raw-bottom-sheet";
-import { useTheme } from "../utils/ThemeProvider";
 
 interface UniversalBottomSheetProps {
   children?: React.ReactNode;
@@ -13,7 +18,7 @@ interface UniversalBottomSheetProps {
 const UniversalBottomSheet = forwardRef<any, UniversalBottomSheetProps>(
   ({ children, mode: passedMode }, ref) => {
     // theme
-    const { mode: systemMode } = useTheme();
+    const systemMode = useColorScheme();
     const isDark = (passedMode || systemMode) === "dark";
     const height = Dimensions.get("window").height * 0.5;
     const isAndroid = Platform.OS === "android";
@@ -44,7 +49,7 @@ const UniversalBottomSheet = forwardRef<any, UniversalBottomSheetProps>(
             width: 40,
           },
         }}
-        closeOnDragDown={true}
+        draggable={true}
       >
         <View style={styles.container}>
           {/* Background: Platform Conditional */}
